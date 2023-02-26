@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: url("../asset/takashi-miyazaki-ZXG8JPS8CEk-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5em;
+    line-height: 2;
+   
+}
+h3{
+  
+    color: #fff;
+    font-size: 27px;
+}
+h2{
+    color: #fff;
+    font-size: 35px;
+}
+h1{
+    color: #fff;
+    font-size: 35px;
+
+}
+@media  screen and (max-width: 700px){
+    .content{
+        max-width: 500px;
+    }
+    .represent h2{
+      font-size: 25px;
+    }
+}
