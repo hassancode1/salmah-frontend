@@ -27,6 +27,7 @@ const navLinks = document.querySelectorAll('a').forEach(link =>{
 
 const container = document.querySelector(".container")
 const grid= document.querySelector(".grid")
+
 const text = document.querySelector(".headtext")
 const loader = document.querySelector(".loading")
 function showloader(){
@@ -44,11 +45,12 @@ async function homeGallery(){
     
 hideloader()
     repsData.data.forEach((data) =>{
-        console.log(data.attributes)
+       
     text.textContent = `${data.attributes.name}`
-
-    data.attributes.images.data.forEach((img, id) =>{
-const IMAGEURL = img.attributes.formats.large.url
+	console.log(data.attributes)
+    data.attributes.images?.data.forEach((img, id) =>{
+		
+const IMAGEURL = img?.attributes?.url
 
 const image = document.createElement('img')
 const wrapper = document.createElement('div')
@@ -56,6 +58,7 @@ image.classList.add(`img${id +1}`)
 image.src =  IMAGEURL 
 image.style= " box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
 wrapper.append(image)
+
 grid.append(wrapper)
 
 // let element = document.createElement("div");

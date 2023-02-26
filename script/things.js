@@ -48,7 +48,7 @@ description.textContent = `${repsData.data.attributes.description}`
     text.textContent = `${repsData.data.attributes.name}`
 
     repsData.data.attributes.images.data.forEach((img, id) =>{
-const IMAGEURL = img.attributes.formats.medium.url
+const IMAGEURL = img.attributes.url
 
 const image = document.createElement('img')
 const wrapper = document.createElement('div')
