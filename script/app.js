@@ -36,7 +36,7 @@ loader.classList.add('show')
 function  hideloader(){
 	loader.classList.add('hide')
 	}
-const APIURL = `https://shark-app-3o25u.ondigitalocean.app/api/homegalleries?populate=*`;
+const APIURL = `https://salma.fly.dev/api/homegalleries?populate=*`;
 const url =`http://localhost:1337`
 async function homeGallery(){
 	showloader()

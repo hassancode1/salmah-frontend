@@ -35,7 +35,7 @@ loader.classList.add('show')
 function  hideloader(){
 	loader.classList.add('hide')
 	}
-const APIURL = `https://shark-app-3o25u.ondigitalocean.app/api/people-gallery?populate=*`;
+const APIURL = `https://salma.fly.dev/api/people-gallery?populate=*`;
 async function peopleGallery(){
 	showloader()
     const resp = await fetch(APIURL);
